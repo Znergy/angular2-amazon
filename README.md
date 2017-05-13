@@ -1,28 +1,72 @@
 # Amazon
+#### Author: Ryan Jones
+#### Version: 04/12/2017
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.2.
+## Description 
+This project was built utilizing Angular 2, Firebase, and RESTful routing. I choose to simulate the functionality of Amazon because it's always been interesting to me how everything works together. There was a lot of pre-planning involved to wrap my head around how Amazon works, then how that translates into angular 2 and TypeScript.
 
-## Development server
+## Hosted documentation
+https://local-zoo.firebaseapp.com/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Project Requirements
+* npm (node package manager) ($ brew install -g node)
+* bower (front-end dependencies) ($ npm install -g bower)
+* firebase (backend database/hosting/authentication)
+* angular cli (front-end framework)($ npm install -g angular-cli)
 
-## Code scaffolding
+## General Setup
+* npm install
+* bower install
+* setup firebase
+* ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Firebase Setup
 
-## Build
+* Create an account with Firebase
+* Create a new project
+* Setup firebase for a web application
+* Create a file called, api-keys.ts, in the app directory (app/api-keys.ts)
+* Copy the example code below, and add in your credentials
+* Once the api-keys.ts file is setup, you need to import the file into app.module.ts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Firebase api-keys.ts code
+```
+export var masterFirebaseConfig = {
+  apiKey: "xxxxxxxxxxxxxxxxxxxxx",
+  authDomain: "xxxxxxxxxxxx",
+  databaseURL: "xxxxxxxxxxxxxx",
+  projectId: "xxxxxxxxxx",
+  storageBucket: "xxxxxxxxx",
+  messagingSenderId: "xxxxxxxxxxx"
+};
+```
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* [Angular 2]
+* [Node.js]
+* [REST]
+* [Firebase]
+* [JavaScript]
+* [HTML]
+* [CSS]
 
-## Running end-to-end tests
+## License
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+This project is licensed under the MIT License - [license]
 
-## Further help
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+
+Copyright (c) 2017 Local Zoo
+
+[Angular 2]: https://angular.io/
+[Node.js]: https://nodejs.org/en/
+[REST]: https://en.wikipedia.org/wiki/Representational_state_transfer
+[Firebase]: https://firebase.google.com/
+[JavaScript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[HTML]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[CSS]: https://developer.mozilla.org/en-US/docs/Web/CSS
