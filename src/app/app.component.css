@@ -1,0 +1,22 @@
+.top-promotion { background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/airstream/upnav/T2/T2_latest_1x._CB510112946_.jpg); background-color: #F6F6F6; text-align: left; background-position: top left; height: 55px; background-repeat: no-repeat; background-size: 1920px; }
+.promotion .row { margin-left: 0px; margin-right: 0px; }
+.header-container { padding-left: 0px; padding-right: 0px;}
+.nav-logo { background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png); }
+.amazon-logo { margin-top: 5px;}
+.header-nav .row { margin-left: 0px; margin-right: 0px;}
+.search-bar { margin-top: 9px;  }
+.main-nav-ul li { display: inline; padding-right: 6px; }
+.secondary-nav-ul li { display: inline; padding-right: 3px; }
+.secondary-nav-ul a { color: #fff; }
+.main-nav-ul { list-style-type: none; padding-left: 0px; font-size: 13px; margin-top: 4px; }
+.main-nav-ul a { color: #ccc; }
+.secondary-nav-ul { list-style-type: none; padding-left: 0px; text-align: right; margin-top: -12px; }
+.departments-span { padding-left: 10px; }
+.glyphicon-shopping-cart { font-size: 2em; }
+.header-container { background-color: #232F3E; color: #fff; }
+.search-icon { background-color: #f3a847; border-color: #f3a847; font-size: 18px; color: #333; }
+.top-header-div { margin-bottom: 10px; }
+.glyphicon-triangle-bottom { font-size: 10px; }
+.departments-div { padding-top: 2px; }
+.search-dropdown { color: #777; }
+.bfh-number { height: 35px; }

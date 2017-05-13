@@ -1,7 +1,54 @@
-<h2>Header</h2>
+<div class="container-fluid header-container">
+  <div class="promotion">
+    <div class="row top-promotion"></div>
+  </div>
+  <div class="header-nav">
+    <div class="row top-header-div">
+      <div class="col-md-2">
+        <img class="amazon-logo" src="../assets/logo2.png" alt="Amazon Logo">
+      </div>
+      <div class="col-md-7 search-bar">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon search-dropdown">All <span class="glyphicon glyphicon-triangle-bottom"></span></span>
+            <input type="text" class="form-control bfh-number" name="search">
+            <span class="input-group-addon search-icon"><span class="glyphicon glyphicon-search"></span></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    <div class="main-nav">
+      <div class="row">
+        <div class="col-md-2 departments-div">
+          <span class="departments-span">Departments <span class="glyphicon glyphicon-triangle-bottom"></span></span>
+        </div>
+        <div class="col-md-6">
+          <ul class="main-nav-ul">
+            <li><a href="#">Browsing History <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+            <li><a href="#">Amazon.com</a></li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Gift Cards & Registry</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <ul class="secondary-nav-ul">
+            <li><a href="#">Account's & Lists <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Prime <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+            <li><span class="glyphicon glyphicon-shopping-cart"></span>Cart</li>
+          </ul>
 
-<div class="container-fluid content-container">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+</div>
+<div class="container-fluid">
   <router-outlet></router-outlet>
 </div>
-
-<h2>Footer</h2>
