@@ -1,3 +1,4 @@
-<p>
-  products works!
-</p>
+<h1>Products</h1>
+<ul>
+  <li *ngFor="let product of products | async" (click)="goToDetailPage(product)">{{ product.name }}</li>
+</ul>
