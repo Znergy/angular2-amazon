@@ -1,3 +1,6 @@
-<p>
-  product works!
-</p>
+<h3>{{(productToDisplay | async)?.name}}</h3>
+<ul class="product-details-ul">
+  <li>Name: {{(productToDisplay | async)?.name}}</li>
+  <li>Species: {{(productToDisplay | async)?.description}}</li>
+  <li>Age: {{(productToDisplay | async)?.seller}}</li>
+</ul>
