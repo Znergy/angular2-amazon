@@ -12,7 +12,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'category/:categoryid/product/:productid',
-    component: ProductsComponent
+    component: ProductComponent
   },
   {
     path: 'category/:categoryid/products',
@@ -21,6 +21,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'products/:id',
+    component: ProductComponent
   }
 ];
 
