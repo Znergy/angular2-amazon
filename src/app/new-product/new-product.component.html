@@ -1,0 +1,10 @@
+<h2>Add a product</h2>
+<form class="addProductForm" action="index.html" method="post">
+  <label for="name">Name</label>
+  <input type="text" #newName>
+  <label for="description">Description</label>
+  <input type="text" #newDescription>
+  <label for="seller">Seller</label>
+  <input type="text" #newSeller>
+  <button (click)="addProduct(newName.value, newDescription.value, newSeller.value);">Add Product</button>
+</form>
