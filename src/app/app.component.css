@@ -20,3 +20,20 @@
 .departments-div { padding-top: 2px; }
 .search-dropdown { color: #777; }
 .bfh-number { height: 35px; }
+.ul-under-nav li { display: inline; padding-right: 8px; }
+.ul-under-nav { list-style-type: none; text-decoration: none; font-size: 20px; margin-top:12px; }
+.ul-under-nav li a { color: #333; }
+.footer h4 a { color: #f3a847; margin-top: 10px; }
+.footer ul { list-style-type: none; padding-left: 0px; }
+.footer a:hover { text-decoration: none; }
+.footer li a { color: #fff; }
+.footer p { padding-bottom: 5px; }
+.footer { background-color: #232F3E; }
+.footer-nav { margin-top: 25px; margin-bottom: 10px; margin-left: 0px; margin-right: 0px; padding-top: 30px; }
+.footer-note { text-align: center; color: #fff; }
+.social-links li { display: inline; padding-right: 10px; }
+.fa-linkedin, .fa-github, .fa-rss { color: #262626; }
+.footer-container { padding-left: 0px; padding-right: 0px; }
+.footer img { padding-bottom: 10px; }
+.social-row { margin-left: 0px; margin-right: 0px; }
+.top-promotion, .departments-span, .glyphicon-shopping-cart, .search-icon, .amazon-logo, .search-dropdown { cursor: pointer; }
