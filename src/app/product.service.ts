@@ -28,4 +28,9 @@ export class ProductService {
                                 description: localUpdatedProduct.description,
                                 seller: localUpdatedProduct.seller});
   }
+
+  deleteProduct(localProductToDelete){
+    var productEntryInFirebase = this.getProductById(localProductToDelete.$key);
+    productEntryInFirebase.remove();
+  }
 }
