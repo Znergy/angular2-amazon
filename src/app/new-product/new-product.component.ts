@@ -11,6 +11,8 @@ import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/data
   providers: [ ProductService ]
 })
 export class NewProductComponent implements OnInit {
+  isFormShowing: boolean = false;
+  isProductShowing: boolean = false;
 
   constructor(private productService: ProductService) { }
 

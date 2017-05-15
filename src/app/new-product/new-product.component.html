@@ -1,10 +1,19 @@
-<h2>Add a product</h2>
-<form class="addProductForm" action="index.html" method="post">
-  <label for="name">Name</label>
-  <input type="text" #newName>
-  <label for="description">Description</label>
-  <input type="text" #newDescription>
-  <label for="seller">Seller</label>
-  <input type="text" #newSeller>
-  <button (click)="addProduct(newName.value, newDescription.value, newSeller.value);">Add Product</button>
-</form>
+<div class="new-product-section">
+  <h1 (click)="isProductShowing = !isProductShowing;">Add a product <span class="glyphicon glyphicon-menu-down"></span></h1>
+  <div class="add-product-div" *ngIf="isProductShowing">
+    <h2>Follow the Instructions Below</h2>
+    <p>If you would like to add a product then fill out our simple product form and a new product will popualte under the products list.</p>
+    <div class="new-product-div" *ngIf="isFormShowing">
+      <form class="addProductForm" action="index.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" #newName>
+        <label for="description">Description</label>
+        <input type="text" #newDescription>
+        <label for="seller">Seller</label>
+        <input type="text" #newSeller>
+        <button class="btn btn-success" (click)="addProduct(newName.value, newDescription.value, newSeller.value); isFormShowing = false;">Add Product</button>
+      </form>
+    </div>
+    <button class="btn btn-primary" *ngIf="!isFormShowing"(click)="isFormShowing = true;">Add Product</button>
+  </div>
+</div>
