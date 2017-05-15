@@ -10,11 +10,18 @@ import { ProductService } from '../product.service';
 })
 export class EditProductComponent implements OnInit {
   @Input() selectedProduct;
+  isFormShowing: boolean = false;
 
   constructor(private productService: ProductService) { }
 
   beginUpdatingProduct(productToUpdate){
     this.productService.updateProduct(productToUpdate);
+  }
+
+  beginDeletingProduct(productToDelete){
+    if(confirm("Are you sure you want to delete " + productToDelete.name + "?")){
+      this.productService.deleteProduct(productToDelete);
+    }
   }
 
   ngOnInit() {

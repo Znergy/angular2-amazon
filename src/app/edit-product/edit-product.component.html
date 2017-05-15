@@ -1,14 +1,18 @@
-<h4>Edit Product</h4>
+<div class="edit-product">
+  <h4>Edit Product</h4>
+  <div class="update-form-div" *ngIf="isFormShowing">
+    <label>New Product Title:</label>
+    <input [(ngModel)]="selectedProduct.name">
+    <br>
 
-<label>New Product Title:</label>
-<input [(ngModel)]="selectedProduct.name">
-<br>
+    <label>New Product Artist:</label>
+    <input [(ngModel)]="selectedProduct.description">
+    <br>
 
-<label>New Product Artist:</label>
-<input [(ngModel)]="selectedProduct.description">
-<br>
-
-<label>New Product Description:</label>
-<input [(ngModel)]="selectedProduct.seller">
-
-<button (click)="beginUpdatingProduct(selectedProduct)">Update</button>
+    <label>New Product Description:</label>
+    <input [(ngModel)]="selectedProduct.seller">
+    <button class="btn btn-primary" (click)="beginUpdatingProduct(selectedProduct); isFormShowing = false;">Update</button>
+  </div>
+  <button class="btn btn-primary" *ngIf="!isFormShowing"(click)="isFormShowing = true;">Update</button>
+  <button class="btn btn-danger" (click)="beginDeletingProduct(selectedProduct);">Delete</button>
+</div>
