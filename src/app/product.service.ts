@@ -22,18 +22,10 @@ export class ProductService {
     return this.db.object('products/' + productId);
   }
 
-  updateProduct(localProduct) {
-    // problem getting the $key..
-    var productFromDatabase = this.getProductById(localProduct.$key);
-    productFromDatabase.update({
-      species: localProduct.species,
-      name: localProduct.name,
-      age: localProduct.age,
-      diet: localProduct.diet,
-      caretaker: localProduct.caretaker,
-      sex: localProduct.sex,
-      likes: localProduct.likes,
-      dislikes: localProduct.dislikes
-    });
+  updateProduct(localUpdatedProduct){
+    var productEntryInFirebase = this.getProductById(localUpdatedProduct.$key);
+    productEntryInFirebase.update({name: localUpdatedProduct.name,
+                                description: localUpdatedProduct.description,
+                                seller: localUpdatedProduct.seller});
   }
 }

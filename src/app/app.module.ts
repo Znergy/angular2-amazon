@@ -13,6 +13,7 @@ import { NewProductComponent } from './new-product/new-product.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { EditProductComponent } from './edit-product/edit-product.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     ProductsComponent,
     ProductComponent,
     AdminComponent,
-    NewProductComponent
+    NewProductComponent,
+    EditProductComponent
   ],
   imports: [
     BrowserModule,
