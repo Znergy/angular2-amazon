@@ -11,6 +11,9 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
   providers: [ ProductService ]
 })
 export class ProductsComponent implements OnInit {
+  isContentShowing: boolean = false;
+  currentRoute: string = this.router.url;
+  isProductShowing: boolean = false;
   products: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private productService: ProductService) { }
@@ -20,7 +23,7 @@ export class ProductsComponent implements OnInit {
   }
 
   goToDetailPage(clickedProduct) {
-    this.router.navigate(['products', clickedProduct.$key]);
+    this.router.navigate(['product', clickedProduct.$key]);
   };
 
 }
