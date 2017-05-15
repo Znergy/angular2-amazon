@@ -4,6 +4,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
 import { AdminComponent } from './admin/admin.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   {
@@ -23,7 +24,15 @@ const appRoutes: Routes = [
     component: AdminComponent
   },
   {
-    path: 'products/:id',
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'products',
+    component: ProductsComponent
+  },
+  {
+    path: 'product/:id',
     component: ProductComponent
   }
 ];
