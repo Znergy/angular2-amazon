@@ -2,11 +2,11 @@
 #### Author: Ryan Jones
 #### Version: 04/12/2017
 
-## Description 
+## Description
 This project was built utilizing Angular 2, Firebase, and RESTful routing. I choose to simulate the functionality of Amazon because it's always been interesting to me how everything works together. There was a lot of pre-planning involved to wrap my head around how Amazon works, then how that translates into angular 2 and TypeScript.
 
 ## Hosted documentation
-https://local-zoo.firebaseapp.com/
+https://amazon-dc364.firebaseapp.com
 
 ## Project Requirements
 * npm (node package manager) ($ brew install -g node)
@@ -50,18 +50,6 @@ export var masterFirebaseConfig = {
 * [JavaScript]
 * [HTML]
 * [CSS]
-
-## License
-
-This project is licensed under the MIT License - [license]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-
-Copyright (c) 2017 Local Zoo
 
 [Angular 2]: https://angular.io/
 [Node.js]: https://nodejs.org/en/
