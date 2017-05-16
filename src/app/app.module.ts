@@ -15,6 +15,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { AboutComponent } from './about/about.component';
+import { SearchListPipe } from './search-list.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     AdminComponent,
     NewProductComponent,
     EditProductComponent,
-    AboutComponent
+    AboutComponent,
+    SearchListPipe
   ],
   imports: [
     BrowserModule,

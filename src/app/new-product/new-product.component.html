@@ -11,7 +11,9 @@
         <input type="text" #newDescription>
         <label for="seller">Seller</label>
         <input type="text" #newSeller>
-        <button class="btn btn-success" (click)="addProduct(newName.value, newDescription.value, newSeller.value); isFormShowing = false;">Add Product</button>
+        <label for="price">Price</label>
+        <input type="text" #newPrice>
+        <button class="btn btn-success" (click)="addProduct(newName.value, newDescription.value, newSeller.value, newPrice.value); isFormShowing = false;">Add Product</button>
       </form>
     </div>
     <button class="btn btn-primary" *ngIf="!isFormShowing"(click)="isFormShowing = true;">Add Product</button>

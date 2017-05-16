@@ -16,8 +16,8 @@ export class NewProductComponent implements OnInit {
 
   constructor(private productService: ProductService) { }
 
-  addProduct(newName: string, newDescription: string, newSeller: string) {
-    var newProduct: Product = new Product(newName, newDescription, newSeller);
+  addProduct(newName: string, newDescription: string, newSeller: string, newPrice: number) {
+    var newProduct: Product = new Product(newName, newDescription, newSeller, newPrice);
     this.productService.addProduct(newProduct);
   }
 

@@ -14,12 +14,13 @@ export class ProductsComponent implements OnInit {
   isContentShowing: boolean = false;
   currentRoute: string = this.router.url;
   isProductShowing: boolean = false;
-  products: FirebaseListObservable<any[]>;
+  products: Product[];
+  filter: string = 'all';
 
   constructor(private router: Router, private productService: ProductService) { }
 
   ngOnInit() {
-    this.products = this.productService.getProducts();
+    this.productService.getProducts().subscribe(products => this.products = products);
   }
 
   goToDetailPage(clickedProduct) {
