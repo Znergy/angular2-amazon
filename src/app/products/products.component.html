@@ -8,7 +8,7 @@
       <li><a class="filter-option" (click)="filter = 'cheap';">Cheap Products</a></li>
     </ul>
     <div class="product-view" *ngFor="let product of products | searchList:filter">
-      <h2 (click)="isContentShowing = !isContentShowing;">{{ product.name }} <span class="glyphicon glyphicon-menu-down"></span></h2>
+      <h2 (click)="isContentShowing = !isContentShowing;">{{ product.name }} for ${{ product.price }} <span class="glyphicon glyphicon-menu-down"></span></h2>
       <div class="product-content" *ngIf="isContentShowing">
         <p>Description: {{ product.description }}</p>
         <footer>Seller: {{ product.seller }}</footer>

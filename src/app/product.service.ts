@@ -26,7 +26,8 @@ export class ProductService {
     var productEntryInFirebase = this.getProductById(localUpdatedProduct.$key);
     productEntryInFirebase.update({name: localUpdatedProduct.name,
                                 description: localUpdatedProduct.description,
-                                seller: localUpdatedProduct.seller});
+                                seller: localUpdatedProduct.seller,
+                                price: localUpdatedProduct.price});
   }
 
   deleteProduct(localProductToDelete){

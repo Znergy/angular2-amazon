@@ -11,6 +11,8 @@
 
     <label>New Product Description:</label>
     <input [(ngModel)]="selectedProduct.seller">
+    <label>New Product Price:</label>
+    <input [(ngModel)]="selectedProduct.price">
     <button class="btn btn-primary" (click)="beginUpdatingProduct(selectedProduct); isFormShowing = false;">Update</button>
   </div>
   <button class="btn btn-primary" *ngIf="!isFormShowing"(click)="isFormShowing = true;">Update</button>

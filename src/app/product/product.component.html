@@ -5,7 +5,7 @@
   </div>
   <div class="col-md-4">
     <div class="product-details-div">
-      <h3>{{(productToDisplay | async)?.name}}</h3>
+      <h3>{{(productToDisplay | async)?.name}} for ${{(productToDisplay | async)?.price}}</h3>
       <ul class="product-details-ul">
         <li>Name: {{(productToDisplay | async)?.name}}</li>
         <li>Description: {{(productToDisplay | async)?.description}}</li>
